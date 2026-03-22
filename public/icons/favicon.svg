@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6C5CE7"/>
+      <stop offset="100%" style="stop-color:#00CEC9"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.6"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#bg)"/>
+  <!-- Globe/language symbol -->
+  <circle cx="256" cy="240" r="100" fill="none" stroke="white" stroke-width="12" opacity="0.3"/>
+  <ellipse cx="256" cy="240" rx="50" ry="100" fill="none" stroke="white" stroke-width="10" opacity="0.3"/>
+  <line x1="156" y1="240" x2="356" y2="240" stroke="white" stroke-width="10" opacity="0.3"/>
+  <!-- Microphone icon (main) -->
+  <rect x="228" y="180" width="56" height="96" rx="28" fill="white"/>
+  <path d="M200 270 Q200 320 256 320 Q312 320 312 270" fill="none" stroke="white" stroke-width="12" stroke-linecap="round"/>
+  <line x1="256" y1="320" x2="256" y2="356" stroke="white" stroke-width="12" stroke-linecap="round"/>
+  <line x1="228" y1="356" x2="284" y2="356" stroke="white" stroke-width="12" stroke-linecap="round"/>
+  <!-- Sound waves -->
+  <path d="M332 220 Q352 248 332 276" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+  <path d="M356 200 Q388 248 356 296" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" opacity="0.4"/>
+  <!-- Text "IL" -->
+  <text x="256" y="430" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="48" font-weight="800" letter-spacing="8" opacity="0.8">IDIOMA</text>
+</svg>

@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6C5CE7;
+  --color-primary-light: #A29BFE;
+  --color-primary-dark: #4A3DB8;
+  --color-secondary: #00CEC9;
+  --color-secondary-light: #55EFC4;
+  --color-accent: #FD79A8;
+  --color-accent-light: #FDCB6E;
+  --color-bg-dark: #0F0F23;
+  --color-bg-card: #1A1A2E;
+  --color-bg-card-hover: #232342;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B2B2D0;
+  --color-text-muted: #6C6C8A;
+  --color-success: #00B894;
+  --color-warning: #FDCB6E;
+  --color-error: #E17055;
+  --color-xp-gold: #F9CA24;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg-dark); }
+::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 3px; }
+
+/* Pulse animation for recording */
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+/* Smooth page transitions */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Avatar glow effect */
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(108, 92, 231, 0.4); }
+  50% { box-shadow: 0 0 40px rgba(108, 92, 231, 0.8); }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Sound wave animation */
+@keyframes soundWave {
+  0%, 100% { height: 4px; }
+  50% { height: 20px; }
+}
+
+.sound-wave-bar {
+  animation: soundWave 0.8s ease-in-out infinite;
+}
